@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "412194230712",
+    "firebase_url": "https://y1spelling10to16.firebaseio.com",
+    "project_id": "y1spelling10to16",
+    "storage_bucket": "y1spelling10to16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412194230712:android:e590de806cd884e1",
+        "android_client_info": {
+          "package_name": "com.huihui.androidorderfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412194230712-o36sak36s4jnulvo34ippponkr3uqsbn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.huihui.androidorderfood",
+            "certificate_hash": "54285571ce638e39e1c8026ab5066e0a8f486824"
+          }
+        },
+        {
+          "client_id": "412194230712-ckakdr9i041870pr0j0pldcge7mdcapi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFayB5nwLgBFQ1Gfne_B0F1BhN8hlp9bo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412194230712-ckakdr9i041870pr0j0pldcge7mdcapi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
