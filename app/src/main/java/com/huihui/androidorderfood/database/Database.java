@@ -16,7 +16,7 @@ import java.util.List;
  */
 
 public class Database extends SQLiteAssetHelper {
-    private static final String DB_NAME="EatItDB.db";
+    private static final String DB_NAME="eatdb.db";
     private static final int DB_VER=1;
     public Database(Context context) {
         super(context, DB_NAME, null, DB_VER);
@@ -38,11 +38,11 @@ public class Database extends SQLiteAssetHelper {
         {
             do{
                 result.add(new Order(c.getString(c.getColumnIndex("ProductId")),
-                c.getString(c.getColumnIndex("ProductName")),
+                        c.getString(c.getColumnIndex("ProductName")),
                         c.getString(c.getColumnIndex("Quantity")),
                         c.getString(c.getColumnIndex("Price")),
                         c.getString(c.getColumnIndex("Discount"))
-                ));
+                        ));
             }while (c.moveToNext());
         }
         return result;
@@ -51,12 +51,12 @@ public class Database extends SQLiteAssetHelper {
     public void addToCart(Order order)
     {
         SQLiteDatabase db = getReadableDatabase();
-        String query = String.format("INSERT INTO OrderDetail(ProductId,ProductName,Quantity,Price,Discount) VALUES('%s','%s','%s','%s','%s');")
-                order.getProductId();
-                order.getProductName();
-                order.getQuantity();
-                order.getPrice();
-                order.getDiscount();
+        String query = String.format("INSERT INTO OrderDetail(ProductId,ProductName,Quantity,Price,Discount) VALUES('%s','%s','%s','%s','%s');",
+                order.getProductId(),
+                order.getProductName(),
+                order.getQuantity(),
+                order.getPrice(),
+                order.getDiscount());
         db.execSQL(query);
     }
 
